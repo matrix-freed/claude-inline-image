@@ -83,7 +83,6 @@ Everything uses the documented mods API: [Interface gallery](https://code.claude
 `samples/` holds images you can drop into the prompt to try the plugin:
 
 - `demo.png`: a generated gradient (ours).
-- `matrix-rain.png`: one frame of [Digital rain animation](https://commons.wikimedia.org/wiki/File:Digital_rain_animation_medium_letters_clear.gif) by Jahobr, Wikimedia Commons, CC0 1.0 (public domain).
 - `test.png`: the checkerboard that `/img-test` draws.
 
 ## Uninstall
@@ -159,7 +158,7 @@ Claude Code 플러그인 "inline-image"를 설치해 줘.
 
 ### 샘플 이미지
 
-`samples/`에 시험용 이미지가 있습니다. `demo.png`(자체 제작 그라데이션), `matrix-rain.png`(위키미디어 공용 [Digital rain animation](https://commons.wikimedia.org/wiki/File:Digital_rain_animation_medium_letters_clear.gif)의 한 프레임, Jahobr, CC0 1.0 공개 도메인), `test.png`(`/img-test`가 그리는 체크무늬).
+`samples/`에 시험용 이미지가 있습니다. `demo.png`(자체 제작 그라데이션), `test.png`(`/img-test`가 그리는 체크무늬).
 
 ### 제거
 
