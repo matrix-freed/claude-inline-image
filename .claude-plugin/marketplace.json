@@ -1,0 +1,16 @@
+{
+  "name": "claude-inline-image",
+  "owner": { "name": "matrix-freed", "url": "https://github.com/matrix-freed" },
+  "metadata": { "description": "Inline image preview for the Claude Code terminal" },
+  "plugins": [
+    {
+      "name": "inline-image",
+      "source": "./",
+      "description": "Shows dropped or pasted images under their [Image #N] row and draws local images with /img",
+      "version": "0.1.0",
+      "license": "MIT",
+      "homepage": "https://github.com/matrix-freed/claude-inline-image",
+      "keywords": ["image", "terminal", "kitty-graphics", "ghostty", "cmux"]
+    }
+  ]
+}

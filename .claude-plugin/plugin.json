@@ -1,0 +1,10 @@
+{
+  "name": "inline-image",
+  "version": "0.1.0",
+  "description": "Shows images you drop or paste into Claude Code right under their [Image #N] row, and draws any local image with /img, in terminals that support the kitty graphics protocol (Ghostty, kitty, cmux)",
+  "author": { "name": "matrix-freed", "url": "https://github.com/matrix-freed" },
+  "homepage": "https://github.com/matrix-freed/claude-inline-image",
+  "repository": "https://github.com/matrix-freed/claude-inline-image",
+  "license": "MIT",
+  "keywords": ["image", "terminal", "kitty-graphics", "ghostty", "cmux", "mod"]
+}
