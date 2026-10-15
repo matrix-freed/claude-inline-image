@@ -3,7 +3,7 @@
 //   /img <path>                   → drawn in a pane (type "/img " then drag a file)
 //   /imgtest                      → bundled test PNG in a pane
 const IMG_RE = /(?:^|[\s"'(\[])((?:~|\/)[^\s"'()\[\]]*?\.(?:png|jpe?g|gif|webp|heic|tiff?|bmp))(?=$|[\s"')\]])/gi
-const INLINE = { columns: 32, rows: 9 }   // size under the [Image #N] row
+const INLINE = { columns: 48, rows: 14 }   // size under the [Image #N] row
 let pane = { title: 'inline-image', lines: [], images: [] }
 const byRow = new Map()      // session.append uuid -> images
 const pending = []           // images not yet matched to a rendered row

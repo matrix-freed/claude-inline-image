@@ -54,7 +54,7 @@ Do not change any other setting.
 
 | Action | Result |
 | --- | --- |
-| Drag an image file into the prompt, or paste one with Ctrl+V, then Enter | A 32×9-cell preview appears under that `[Image #N]` row |
+| Drag an image file into the prompt, or paste one with Ctrl+V, then Enter | A 48×14-cell preview appears under that `[Image #N]` row |
 | `/img ~/Desktop/shot.png` | The image opens in a side pane (Esc closes it) |
 | `/img ` then drag a file, then Enter | Same, with the dropped path |
 | `/img-test` | Bundled test card in a pane |
@@ -133,7 +133,7 @@ Claude Code 플러그인 "inline-image"를 설치해 줘.
 
 | 동작 | 결과 |
 | --- | --- |
-| 이미지를 끌어다 놓거나 Ctrl+V, 그리고 Enter | 그 `[Image #N]` 행 아래 32열×9행 미리보기 |
+| 이미지를 끌어다 놓거나 Ctrl+V, 그리고 Enter | 그 `[Image #N]` 행 아래 48열×14행 미리보기 |
 | `/img ~/Desktop/shot.png` | 사이드 패널에 표시 (Esc로 닫기) |
 | `/img ` 뒤에 파일을 끌어다 놓고 Enter | 위와 같음 |
 | `/img-test` | 번들 테스트 카드 |
