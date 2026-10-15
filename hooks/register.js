@@ -8,6 +8,7 @@ let pane = { title: 'inline-image', lines: [], images: [] }
 const byRow = new Map()      // session.append uuid -> images
 const pending = []           // images not yet matched to a rendered row
 const assigned = new Map()   // UserMessage requestId -> images (fallback by order)
+const drawnAt = new Map()    // requestId -> last draw time, to draw a message once per pass
 
 function unescapePath(p) { return p.replace(/\\ /g, ' ').replace(/^["']|["']$/g, '') }
 
@@ -105,6 +106,14 @@ export function register(on) {
     if (!images || !images.length) return next(e)
     const { Box, Text, Image } = $.ui.resolve(e)
     const theirs = await next(e)
+    // Draw only on the engine's own row. If another mod (or a stale instance of this
+    // one after /reload-plugins) already wrapped it, leave their drawing alone.
+    if (!theirs || theirs.type !== 'engine') return theirs
+    // One message can be drawn at two sites (compact header + full body): draw once.
+    const now = Date.now()
+    const last = drawnAt.get(e.requestId) || 0
+    if (now - last < 800) return theirs
+    drawnAt.set(e.requestId, now)
     const cols = Math.min(INLINE.columns, (e.props && e.props.bodyColumns) || INLINE.columns)
     const kids = [theirs]
     for (const im of images) {
