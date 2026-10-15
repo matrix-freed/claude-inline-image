@@ -78,6 +78,14 @@ Everything uses the documented mods API: [Interface gallery](https://code.claude
 | The preview is attached to the wrong row | Row matching fell back to order. Please open an issue with the steps. |
 | `/img` says conversion failed | `sips` could not read the file (unsupported format or a path with special characters). |
 
+## Sample images
+
+`samples/` holds images you can drop into the prompt to try the plugin:
+
+- `demo.png`: a generated gradient (ours).
+- `matrix-rain.png`: one frame of [Digital rain animation](https://commons.wikimedia.org/wiki/File:Digital_rain_animation_medium_letters_clear.gif) by Jahobr, Wikimedia Commons, CC0 1.0 (public domain).
+- `test.png`: the checkerboard that `/img-test` draws.
+
 ## Uninstall
 
 ```
@@ -148,6 +156,10 @@ Claude Code 플러그인 "inline-image"를 설치해 줘.
 | 행 아래 아무것도 없음 | 이 세션에 플러그인이 안 실려 있음. 새 세션 또는 `/reload-plugins` |
 | 엉뚱한 행에 그림이 붙음 | 행 매칭이 순서 기반 예비 규칙으로 떨어진 경우. 재현 순서와 함께 이슈로 알려 주십시오 |
 | `/img` 변환 실패 | `sips`가 못 읽는 형식이거나 특수문자 경로 |
+
+### 샘플 이미지
+
+`samples/`에 시험용 이미지가 있습니다. `demo.png`(자체 제작 그라데이션), `matrix-rain.png`(위키미디어 공용 [Digital rain animation](https://commons.wikimedia.org/wiki/File:Digital_rain_animation_medium_letters_clear.gif)의 한 프레임, Jahobr, CC0 1.0 공개 도메인), `test.png`(`/img-test`가 그리는 체크무늬).
 
 ### 제거
 
